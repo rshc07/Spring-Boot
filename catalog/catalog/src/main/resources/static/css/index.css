@@ -1,0 +1,39 @@
+body{
+    font-family: Poppins;
+    background-image: url('wave_2.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.contentButton{
+    width: 500px;
+    height: 200px;
+    border-style: dashed;
+    margin: 160px auto;
+    padding: 10px 20px 30px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(21, 213, 175, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125); 
+}
+.button{
+    font-size: medium;
+    margin: 20px 140px auto;
+    display: block;
+    width: 40%;
+    background-color: aquamarine;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px aquamarine;
+    box-shadow: 2px;
+    border-radius: 8px;
+}
+.button:hover{
+    
+    background-color:rgb(224, 235, 232);
+}
+h3{
+    text-align: center;
+    font-size: 30px;
+}

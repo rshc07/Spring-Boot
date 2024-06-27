@@ -1,0 +1,79 @@
+body{
+    font-family: Poppins;
+    background-image: url('wave.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.Add-ProductForm{
+    width: 500px;
+    height: 200px;
+    margin: 160px auto;
+    padding: 10px 20px 30px; 
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(21, 213, 175, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125); 
+}
+#LB{
+    margin: 40px 40px auto;
+    font-weight: bold;
+   
+}
+#PR{
+    margin: 30px 40px auto;
+    font-weight: bold;   
+   
+}
+#CA{
+    margin: 30px 40px;
+    font-weight: bold;  
+   
+}
+input[type="text"] {
+    margin: 10px auto;
+    width: 40%;
+    font-family: Poppins;
+}
+.productName .textBoxes{
+    border: 1px aquamarine;
+    border-radius: 5px;
+ }
+.productName .textBoxes:hover{
+    background-color:rgb(224, 235, 232);
+    border: 2px aquamarine;
+}
+.Price .textBoxes{
+   margin: 20px 76px auto;
+   border: 1px aquamarine;
+   border-radius: 5px;
+}
+.Price .textBoxes:hover{
+    background-color:rgb(224, 235, 232);
+    border: 2px aquamarine;
+}
+.Catogory .textBoxes{
+
+    margin: 30px 39px auto;
+    border: 1px aquamarine;
+    border-radius: 5px;
+
+}
+.Catogory .textBoxes:hover{
+    background-color:rgb(224, 235, 232);
+    border: 2px aquamarine;
+}
+input[type="button"]{
+    margin: 30px 180px 50px;    
+    width: 30%;
+    background-color: aquamarine;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px aquamarine;
+    box-shadow: 2px;
+    border-radius: 8px;
+}
+input[type="button"]:hover{
+    background-color:rgb(224, 235, 232);
+}
