@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add-Product</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="AddProductStyle.css" th:href="@{/css/AddProductStyle.css}"/>
+</head>
+<body>
+    <form action="/add-product" method="post" class = "Add-ProductForm" th:object="${product}">
+        <div class = "productName">
+            <label for="Product name" id="LB">Product Name : </label>
+            <input type="text" id="name" class="textBoxes" th:field="*{name}" required>
+        </div>
+        <div class="Price">
+            <label for="Price" id="PR">Price :</label>
+            <input type="text" id="price" class="textBoxes" th:field="*{price}" required>
+        </div>
+        <div class="Catogory">
+            <label for="Catogory" id="CA">Catogory :</label>
+            <input type="text" id="category" class="textBoxes" th:field="*{category}" required>
+        </div>
+        <div class="Add">
+            <input type="submit" value="Add">
+        </div>
+    </form>    
+</body>
+</html>
+
+
+
