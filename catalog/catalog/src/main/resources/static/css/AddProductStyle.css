@@ -44,27 +44,27 @@ input[type="text"] {
     background-color:rgb(224, 235, 232);
     border: 2px aquamarine;
 }
-.Price .textBoxes{
+.price .textBoxes{
    margin: 20px 76px auto;
    border: 1px aquamarine;
    border-radius: 5px;
 }
-.Price .textBoxes:hover{
+.price .textBoxes:hover{
     background-color:rgb(224, 235, 232);
     border: 2px aquamarine;
 }
-.Catogory .textBoxes{
+.category .textBoxes{
 
     margin: 30px 39px auto;
     border: 1px aquamarine;
     border-radius: 5px;
 
 }
-.Catogory .textBoxes:hover{
+.category .textBoxes:hover{
     background-color:rgb(224, 235, 232);
     border: 2px aquamarine;
 }
-input[type="button"]{
+input[type="submit"]{
     margin: 30px 180px 50px;    
     width: 30%;
     background-color: aquamarine;
@@ -74,6 +74,6 @@ input[type="button"]{
     box-shadow: 2px;
     border-radius: 8px;
 }
-input[type="button"]:hover{
+input[type="submit"]:hover{
     background-color:rgb(224, 235, 232);
 }

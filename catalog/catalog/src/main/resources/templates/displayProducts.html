@@ -5,30 +5,30 @@
     <title>displayProducts</title>
 	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" th:href="@{/css/DisplayProducts.css}">
-</head>
-<body>
-    <div class="flexContainer">
-    <h2>Product Catalog </h2>
-    <div class="tableContainer">
-    <table border="1">
-		<thead>
-       	 <tr>
-            <th>Id</th>
-            <th>ProductName</th>
-            <th>Price</th>
-            <th>Category</th>
-         </tr>            
-         </thead>
-         <tbody>
-            <tr th:each="product : ${products}">
-            <td th:text="${product.id}"></td>
-            <td th:text="${product.name}"></td>
-            <td th:text="${product.price}"></td>
-            <td th:text="${product.category}"></td>
-            </tr>
-          </tbody>
-         </table>
-        </div>
-    </div>
-</body>
+	</head>
+	<body>
+	    <div class="H2">
+	    <h2>Product Catalog </h2>
+	    </div>
+	    <div class="tableContainer">
+	    <table border="1">
+			<thead>
+	       	 <tr>
+	            <th>Id</th>
+	            <th>ProductName</th>
+	            <th>Price</th>
+	            <th>Category</th>
+	         </tr>            
+	         </thead>
+	         <tbody>
+	            <tr th:each="product : ${products}">
+	            <td th:text="${product.id}"></td>
+	            <td th:text="${product.name}"></td>
+	            <td th:text="${product.price}"></td>
+	            <td th:text="${product.category}"></td>
+	            </tr>
+	          </tbody>
+	    </table>
+	    </div>
+	</body>
 </html>

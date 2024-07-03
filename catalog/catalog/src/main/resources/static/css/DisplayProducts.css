@@ -5,33 +5,15 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
-/* .tableContainer{
-    width: 500px;
-    height: 180px;
-    margin: 150px auto;
-    padding: 10px 30px 30px;
+.H2{
     text-align: center;
-    justify-content: center;
 }
-.tableContainer tr{
-    display: inline-flex;
-}
-.tableContainer {
+.tableContainer{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 180px;
-} */
-
-/* Add this to your DisplayProducts.css file */
-.flexContainer{
-    display: flex;
-    align-items: center; 
-    text-align: center;
-    border: 1px;
-    border-style: dotted;
-
-.tableContainer {
-    margin-top: 200px;
-    margin-left: 60px;
+    align-items: center;    
+}
+.tableContainer th, .tableContainer td {
+    border: 1px solid black;
+    padding: 8px;
 }

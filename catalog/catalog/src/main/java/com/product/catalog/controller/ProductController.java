@@ -37,7 +37,6 @@ public class ProductController {
     @GetMapping("/displayProducts")
     public String displayProducts(Model model) {
     	List<Product> products = productService.getAllProducts();
-    	System.out.println("Products: " + products);
     	model.addAttribute("products", products);
         return "displayProducts";
     }
