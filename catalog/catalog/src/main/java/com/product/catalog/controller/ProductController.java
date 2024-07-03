@@ -31,7 +31,7 @@ public class ProductController {
     @PostMapping("/add-product")
     public String addProduct(@ModelAttribute("product") Product product) {
         productService.addProduct(product);
-        return "redirect:/";
+        return "redirect:/index";
     }
 
     @GetMapping("/display-products")
