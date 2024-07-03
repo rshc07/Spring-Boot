@@ -34,7 +34,7 @@ public class ProductController {
         return "redirect:/index";
     }
 
-    @GetMapping("/display-products")
+    @GetMapping("/displayProducts")
     public String displayProducts(Model model) {
     	List<Product> products = productService.getAllProducts();
     	System.out.println("Products: " + products);
