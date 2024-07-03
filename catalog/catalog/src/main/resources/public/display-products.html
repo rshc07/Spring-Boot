@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Display Products</title>
-    <link rel="stylesheet" th:href="@{/css/DisplayProducts.css}">
 </head>
 <body>
     <div class="flexContainer">
         <h2>Product Catalog</h2>
         <div class="tableContainer">
-            <table>
+            <table border="1">
                 <thead>
                     <tr>
+                        <th>Id</th>
                         <th>ProductName</th>
                         <th>Price</th>
                         <th>Category</th>
@@ -19,10 +19,10 @@
                 </thead>
                 <tbody>
                     <tr th:each="product : ${products}">
-                     <td th:text="${product.id}"></td>
-				     <td th:text="${product.name}"></td>
-				     <td th:text="${product.price}"></td>
-					 <td th:text="${product.category}"></td>
+                        <td th:text="${product.id}"></td>
+                        <td th:text="${product.name}"></td>
+                        <td th:text="${product.price}"></td>
+                        <td th:text="${product.category}"></td>
                     </tr>
                 </tbody>
             </table>

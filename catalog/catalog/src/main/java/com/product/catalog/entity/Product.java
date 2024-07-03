@@ -8,7 +8,7 @@ import jakarta.persistence.GenerationType;
 
 
 @Entity
-@Table(name = "product")
+@Table(name = "Product")
 public class Product {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,7 +20,24 @@ public class Product {
 	@Column(name = "category")
     private String category;
 	
-    public Long getId() {
+    public Product() {
+		super();
+	}
+
+	public Product(Long id, String name, Double price, String category) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.price = price;
+		this.category = category;
+	}
+
+	@Override
+	public String toString() {
+		return "Product [id=" + id + ", name=" + name + ", price=" + price + ", category=" + category + "]";
+	}
+
+	public Long getId() {
         return id;
     }
 

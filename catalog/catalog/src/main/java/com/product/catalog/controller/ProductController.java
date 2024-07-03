@@ -1,5 +1,7 @@
 package com.product.catalog.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -34,11 +36,9 @@ public class ProductController {
 
     @GetMapping("/display-products")
     public String displayProducts(Model model) {
-        model.addAttribute("products", productService.getAllProducts());
+    	List<Product> products = productService.getAllProducts();
+    	System.out.println("Products: " + products);
+    	model.addAttribute("products", products);
         return "displayProducts";
-    }
-
-    public void setProductService(ProductService productService) {
-        this.productService = productService;
     }
 }
