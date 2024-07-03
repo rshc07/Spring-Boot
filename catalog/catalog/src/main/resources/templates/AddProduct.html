@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="AddProductStyle.css">
+</head>
+<body>
+    <form action="/add-product" method="post" class="Add-ProductForm" id="AddP">
+        <div class="productName">
+            <label for="productName" id="LB">Product name: </label>
+            <input type="text" name="productName" class="textBoxes" required>
+        </div>
+        <div class="price">
+            <label for="price" id="PR">Price: </label>
+            <input type="text" name="price" class="textBoxes" required>
+        </div>
+        <div class="category">
+            <label for="category" id="CA">Category: </label>
+            <input type="text" name="category" class="textBoxes" required>
+        </div>
+        <div class="add">
+            <input type="submit" value="Add">
+        </div>
+    </form>    
+</body>
+</html>
